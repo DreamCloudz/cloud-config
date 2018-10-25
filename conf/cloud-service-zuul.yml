@@ -1,0 +1,10 @@
+server:
+  port: 8009
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: cloud-service-ribbon
+    api-b:
+      path: /api-b/**
+      serviceId: cloud-service-feign
